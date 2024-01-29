@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Task Timer</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <header align="center">
+    <h1>TIME TRACKER</h1>
+  </header>
+
+  <body>
+    <script>
+      const d = new Date();
+      document.getElementById("demo").innerHTML = d;
+    </script>
+    <article>
+      <div class="container">
+        <div class="input" align="center">
+          <h2>Daily time logs</h2><br><br>
+          <input type="text" placeholder="Task" id="task"><br><br>
+          <input type="text" placeholder="Description" id="description"><br><br>
+          <div id="timer">
+            
+            <h1 id="hour">00</h1>
+            <h1>:</h1>
+            <h1 id="minute">00</h1>
+            <h1>:</h1>
+            <h1 id="second">00</h1>
+          </div>
+          <button id="toggle">Start</button>
+        </div>
+        <table class="table" id="myTable">
+          <thead>
+            <tr>
+              <th>Task</th>
+              <th>Description</th>
+              <th>Duration</th>
+            </tr>
+          </thead>
+          <tfoot>
+            <tr>
+              <td colspan="3">
+                <p><strong>Time sheet for the date    <h2 id= "date"></h2></strong>
+                  <script>
+                    var today = new Date();
+                    var date = (today.getDate()) + '-' + (today.getMonth() + 1) + '-' + today.getFullYear();
+                    document.getElementById("date").innerHTML = date;
+                  </script>
+                </p>
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </article>
+    <footer>
+      <div align="center" id="footer">Designed by: Gowtham A</div>
+    </footer>
+    <script src='script.js'></script>
+  </body>
+
+
+
+
+
+</html>
